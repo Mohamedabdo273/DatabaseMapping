@@ -12,7 +12,7 @@ Route(routeId(primary),origin,destination,distance,classification)
 
 Aircraft-Route(id(primary),aircraftID(foreignKey),routeId(foreignKey))
 
-Crew(aircraftId(primary),majorPilot,assistantPilot,hostess1,hostess2)
+Crew(aircraftId(foreignKey),majorPilot,assistantPilot,hostess1,hostess2)
 
 Transaction(transactionId(primary),date,description,amount,airlineId(foreignKey))
 
