@@ -1,9 +1,0 @@
-SalesOffice(Num(primary),loc,EmployeeId(foreign))
-
-Employee(id(primary),name,salesNum(foreign))
-
-property(id(primary),add,city,state,zip,salesNum(foreign))
-
-owner(id(primary),name)
-
-owner-property(id(primary),propertyId(foreign),ownerId(foreign),percebt-owned)
