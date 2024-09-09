@@ -10,10 +10,8 @@ Aircraft(aircraftId(primary),capacity,model,airlineId(foreignKey))
 
 Route(routeId(primary),origin,destination,distance,classification)
 
-Aircraft-Route(id(primary),aircraftID(foreignKey),routeId(foreignKey))
+Aircraft-Route(id(primary),aircraftID(foreignKey),routeId(foreignKey),,numperOfPassenger,priicePerPassenger,StartDateTime,arrivalDateTime,TimeSpend)
 
 Crew(aircraftId(foreignKey),majorPilot,assistantPilot,hostess1,hostess2)
 
-Transaction(transactionId(primary),date,description,amount,airlineId(foreignKey))
-
-FlightInformation(id(primary),numperOfPassenger,priicePerPassenger,depatureDateTime,arrivalDateTime,TimeSpend,aircraftId(foreignKey))
+Transaction(transactionId(primary),date,description,amount,airlineId(foreignKey),sellT-ransac,buy-Transac)
